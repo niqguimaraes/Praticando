@@ -1,4 +1,4 @@
-<h1 align="center">Estudos</h1>
+<h1 align="center">Praticando</h1>
 <h4>Repositório com projetos para estudos diversos</h4>
 
 ## Tecnologias utilizadas
