@@ -1,4 +1,4 @@
-<h1 align="center">Calculadora/h1>
+<h1 align="center">Calculadora</h1>
 
 ## :memo: Descrição
 Para treinamento de design e Javascript
