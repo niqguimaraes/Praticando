@@ -4,6 +4,9 @@
 Jogo simples com utilização do DOM em Javascript
 O objetivo é matar todos os mosquitos em tela antes que o tempo acabe
 
+## :link: Link do projeto
+[Jogo Mata Mosquito](http://www.nikolasguimaraes.com/mata_mosquito)
+
 ## :books: Funcionalidades
 * <b>Nível de dificuldade</b>: Normal, Difícil e Chuck Norris
 * <b>Tela de Game Over</b>
