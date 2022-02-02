@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="img/sound.png">
+
+    <title>Simulador Som</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center bg-light">
+    <section class="p-5 rounded shadow bg-warning">
+        <div class="row">
+            <button class="tecla tecla_pom col btn m-2">Pom</button>
+            <button class="tecla tecla_clap col btn m-2">Clap</button>
+            <button class="tecla tecla_tim col btn m-2">Tim</button>
+        </div>
+        <div class="row">
+            <button class="tecla tecla_puff col btn m-2">Puff</button>
+            <button class="tecla tecla_splash col btn m-2">Splash</button>
+            <button class="tecla tecla_toim col btn m-2">Toim</button>
+        </div>
+        <div class="row">
+            <button class="tecla tecla_psh col btn m-2">Psh</button>
+            <button class="tecla tecla_tic col btn m-2">Tic</button>
+            <button class="tecla tecla_tom col btn m-2">Tom</button>
+        </div>
+    </section>
+
+    <audio src="sounds/sounds_keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/sounds_keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/sounds_keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/sounds_keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/sounds_keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/sounds_keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/sounds_keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/sounds_keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/sounds_keyc.wav" id="som_tecla_tom"></audio>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
