@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom css varaibles */
+:root {
+    /* fonts */
+    --font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    --font-size: 15px;
+
+    /* colors */
+
+    /* ### Primary */
+    --linear-gradient-right: #ffa500;
+    --linear-gradient-left: #ffc26c;
+
+    /* ### Neutral */
+    --very-light-grayish: #fff0da;
+    --light-grayish: #ffe0b5;
+    --grayish: #ffd191;
+    --dark-grayish: #d99944;
+    --white: #FFFFFF;
+    --atributions: #795014;
+}
+
+/* Structure */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+/* app-wrapper */
+.app-wrapper {
+    padding: 2em 1em;
+    min-height: 100vh;
+    background-color: var(--very-light-grayish);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.title {
+    margin-bottom: 2em;
+    color: var(--dark-grayish);
+}
+
+.selector {
+    height: 30px;
+    width: 60px;
+    vertical-align: middle;
+    border-radius: 50px;
+    background: linear-gradient(90deg, var(--linear-gradient-left), var(--linear-gradient-right));
+    cursor: pointer;
+}
+
+.button-switch {
+    margin: 2px;
+    height: 80%;
+    width: 40%;
+    border-radius: 50px;
+    right: 3%;
+    transition: right .3s ease-out;
+}
+
+.button-switch.move {
+    right: 50%;
+}
+
+.component {
+    border-radius: 5px;
+    background: var(--white);
+    width: 350px;
+    text-align: center;
+    margin: 1em;
+}
+
+.component>button {
+    padding: 12px;
+    width: 90%;
+}
+
+.component>.price,
+.component>.space,
+.component>.users,
+.component>.transfer {
+    border-bottom: 1px solid var(--grayish);
+}
+
+.profissional>.price,
+.profissional>.space,
+.profissional>.users,
+.profissional>.transfer {
+    border-bottom: 1px solid var(--light-grayish);
+}
+
+.profissional {
+    background: linear-gradient(90deg, var(--linear-gradient-left), var(--linear-gradient-right));
+}
+
+.profissional>button {
+    background: var(--white);
+    color: var(--atributions);
+}
+
+
+.saiba {
+    background: linear-gradient(90deg, var(--linear-gradient-left), var(--linear-gradient-right));
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+.saiba:hover {
+    background: var(--white);
+    border: 1px solid var(--grayish);
+    color: var(--atributions);
+}
+
+.profissional>button:hover {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
