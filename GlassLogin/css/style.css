@@ -41,8 +41,8 @@ a:hover {
 }
 
 .form-control {
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 15px;
+    padding: 25px;
 }
 
 .main {
@@ -52,6 +52,7 @@ a:hover {
 .login {
     border-radius: 30px;
     background: var(--glass);
+    backdrop-filter: blur(20px);
     min-width: 350px;
 }
 
