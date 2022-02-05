@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --glass: rgba(255, 255, 255, 0.6);
+    --roxo: #55165e;
+    --roxo-claro: #791f87;
+    --rosa: #f29dff;
+    --rosa-claro: #f9ceff;
+    --bordo: #5e163e;
+    --azul: #296ff9;
+    --azul-claro: #c0d5fb;
+
+    /* CONTRASTES */
+    --verde: #565e16;
+    --verde-claro: #7a871f;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url(../img/bg2.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--roxo-claro);
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.login {
+    border-radius: 30px;
+    background: var(--glass);
+    min-width: 350px;
+}
+
+.banner {
+    max-width: 500px;
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--roxo), var(--rosa));
+    border: none;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+.entrar {
+    -webkit-animation-name: animacao;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.entrar-reverse {
+    -webkit-animation-name: animacao2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animacao {
+    from {
+        background: linear-gradient(45deg, var(--roxo), var(--rosa));
+        border: none;
+        color: #FFFFFF;
+        width: 50%;
+    }
+
+    to {
+        background:
+            /*linear-gradient(45deg, var(--rosa), var(--roxo))*/
+            transparent;
+        border: 1px solid var(--roxo);
+        color: var(--bordo);
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes animacao2 {
+    from {
+        background:
+            /*linear-gradient(45deg, var(--rosa), var(--roxo))*/
+            transparent;
+        border: 1px solid var(--roxo);
+        color: var(--bordo);
+        width: 100%;
+    }
+
+    to {
+        background: linear-gradient(45deg, var(--roxo), var(--rosa));
+        border: none;
+        color: #FFFFFF;
+        width: 50%;
+    }
+}
